@@ -24,11 +24,7 @@ git clone [your-repository-url]
 cd [repository-name]
 ```
 
-2. Download the assets:
-   - Get the assets from [this link](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/ishwar_balappanawar_students_iiit_ac_in/EnvUSOlARFJLq4_gy22_rD0B8rWwNC1PoSHSNFaMCQBTJA?e=CeXosM)
-   - Extract and place them in the project directory
-
-3. Install the required dependencies:
+2. Install the required dependencies:
 ```bash
 npm install three
 npm install webpack
