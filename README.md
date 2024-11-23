@@ -85,9 +85,8 @@ The game is built using:
 - Three.js for 3D rendering
 - Webpack for bundling
 - Custom physics engine for car mechanics
-- Advanced AI system for opponent cars
+- System logic for opponent cars
 
 ## 🎨 Credits
 
 - 3D models and textures sourced from [Sketchfab](https://sketchfab.com)
-# 3D-Car-Racing-Game
