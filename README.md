@@ -20,8 +20,8 @@ Before you begin, ensure you have Node.js installed on your system.
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
-cd [repository-name]
+git clone https://github.com/ishwarbb/3D-Car-Racing-Game
+cd 3D-Car-Racing-Game
 ```
 
 2. Install the required dependencies:
