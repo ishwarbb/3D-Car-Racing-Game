@@ -89,11 +89,13 @@ The game is built using:
 
 ## � Deployment
 
-The game deploys automatically to GitHub Pages on every push to `main` via the
-[Deploy to GitHub Pages](.github/workflows/deploy-pages.yml) workflow, which builds a
-production bundle with Webpack and publishes the `dist/` and `assets/` folders.
+The game is served on GitHub Pages directly from the `main` branch. A root
+[index.html](index.html) redirects to the built game in `dist/`, and the committed
+`dist/` bundle plus the `assets/` folder are served as-is.
 
-To enable it on a fork: go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+To enable it on a fork: go to **Settings → Pages**, set **Source** to
+**Deploy from a branch**, and choose **main** / **/ (root)**. After changing any
+source code, rebuild with `npm run build` and commit the updated `dist/main.js`.
 
 ## 🎨 Credits
 
