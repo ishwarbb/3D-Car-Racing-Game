@@ -2,6 +2,8 @@
 
 A thrilling 3D racing game inspired by Lightning McQueen, built with Three.js. Race against AI opponents, manage your fuel, and complete three laps to victory!
 
+**▶ [Play the game live](https://ishwarbb.github.io/3D-Car-Racing-Game/)** — best on a desktop browser with a keyboard.
+
 ## 🎮 Game Features
 
 Experience an immersive 3D racing environment complete with a stadium, cheering audience, and a challenging race track filled with twists and turns. The game features a dual-view system, giving you both a main racing perspective and a helpful minimap for strategic navigation.
@@ -24,26 +26,24 @@ git clone https://github.com/ishwarbb/3D-Car-Racing-Game
 cd 3D-Car-Racing-Game
 ```
 
-2. Install the required dependencies:
+2. Install the dependencies:
 ```bash
-npm install three
-npm install webpack
-npm install -g servez
+npm install
 ```
 
 ## 🚀 Running the Game
 
-1. Build the project (required after any code changes):
+1. Build the bundle (required after any code changes):
 ```bash
-npx webpack --config webpack.config.js
+npm run build
 ```
 
-2. Start the server:
+2. Start the local server:
 ```bash
-servez .
+npm start
 ```
 
-3. Navigate to `/dist` in your browser to play the game
+3. Open the printed URL (defaults to http://localhost:8080/) in your browser to play.
 
 ## 🎮 Controls
 
@@ -87,6 +87,20 @@ The game is built using:
 - Custom physics engine for car mechanics
 - System logic for opponent cars
 
+## � Deployment
+
+The game deploys automatically to GitHub Pages on every push to `main` via the
+[Deploy to GitHub Pages](.github/workflows/deploy-pages.yml) workflow, which builds a
+production bundle with Webpack and publishes the `dist/` and `assets/` folders.
+
+To enable it on a fork: go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+
 ## 🎨 Credits
 
-- 3D models and textures sourced from [Sketchfab](https://sketchfab.com)
+- 3D models and textures sourced from [Sketchfab](https://sketchfab.com).
+  These assets remain under their respective Sketchfab licenses and are not
+  covered by this repository's MIT license.
+
+## 📄 License
+
+The source code in this repository is licensed under the [MIT License](LICENSE).
